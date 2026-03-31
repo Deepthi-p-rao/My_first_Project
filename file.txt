@@ -71,6 +71,8 @@ git tag
 git tag <name>
 git tag -a v1.0 -m "message"
 git push origin --tags
+git tag -d v1.0 - delete locally
+git push origin --delete v1.0 - delete from remote
 
 🔹 10. Inspection & Debugging
 git show <commit>
