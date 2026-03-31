@@ -44,12 +44,13 @@ git pull
 git fetch
 
 🔹 6. Undoing Changes (VERY IMPORTANT 🔥)
-git restore <file> → Undo file changes
-git restore --staged <file> → Unstage file
-git reset <file> → Unstage (old way)
-git reset --hard → Reset everything ⚠️
-git revert <commit> → Undo commit safely
-git checkout -- <file> → Old restore
+Mistake Type	      Command	                   Effect
+Working directory	  git restore file.txt	     Discard edits
+Staging area	      git reset HEAD file.txt	   Unstage file
+Last commit       	git reset --soft HEAD~1	   Undo commit, keep staged
+Last commit	        git reset --mixed HEAD~1	 Undo commit, unstage changes
+Last commit	        git reset --hard HEAD~1	   Undo commit, delete changes
+Undo pushed commit	git revert <hash>	         Safe undo by new commit
 
 🔹 7. Stashing
 Temporarily save work.
