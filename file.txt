@@ -1,2 +1,92 @@
-my name is deepthi
-I am learning git cmds
+🔹 1. Setup & Configuration
+Used when you install Git or set your identity.
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+git help <command>
+
+🔹 2. Repository Creation
+Start or copy a repository.
+
+git init → Initialize a repo
+git clone <repo-url> → Copy existing repo
+
+🔹 3. Basic Workflow (MOST IMPORTANT ⭐)
+These are used daily.
+
+git status → Check changes
+git add <file> → Stage file
+git add . → Stage all files
+git commit -m "message" → Save snapshot
+git log → View history
+git diff → See changes
+
+🔹 4. Branching & Merging
+Work on features safely.
+
+git branch → List branches
+git branch <name> → Create branch
+git checkout <branch> → Switch branch
+git checkout -b <branch> → Create + switch
+git switch <branch> → (new way)
+git merge <branch> → Merge branch
+git branch -d <branch> → Delete branch
+
+🔹 5. Remote Repositories (GitHub, etc.)
+Work with remote servers like GitHub
+
+git remote add origin <url>
+git remote -v
+git push -u origin main
+git push
+git pull
+git fetch
+
+🔹 6. Undoing Changes (VERY IMPORTANT 🔥)
+git restore <file> → Undo file changes
+git restore --staged <file> → Unstage file
+git reset <file> → Unstage (old way)
+git reset --hard → Reset everything ⚠️
+git revert <commit> → Undo commit safely
+git checkout -- <file> → Old restore
+
+🔹 7. Stashing
+Temporarily save work.
+
+git stash
+git stash list
+git stash apply
+git stash pop
+git stash drop
+
+🔹 8. Rewriting History (Advanced ⚠️)
+git rebase <branch>
+git rebase -i HEAD~n
+git commit --amend
+
+🔹 9. Tagging (Releases)
+git tag
+git tag <name>
+git tag -a v1.0 -m "message"
+git push origin --tags
+
+🔹 10. Inspection & Debugging
+git show <commit>
+git blame <file>
+git reflog
+git log --oneline --graph --all
+
+🔹 11. Clean & Maintenance
+git clean -fd
+git gc
+git fsck
+
+🔹 12. Collaboration
+git pull --rebase
+git cherry-pick <commit>
+git archive
+
+🔹 13. Submodules
+git submodule add <repo>
+git submodule update --init
