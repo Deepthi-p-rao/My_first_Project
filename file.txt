@@ -1,4 +1,4 @@
-🔹 Setup & Configuration
+🔹 1. Setup & Configuration
 Used when you install Git or set your identity.
 
 git config --global user.name "Your Name"
