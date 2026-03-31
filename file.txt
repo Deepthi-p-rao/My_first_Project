@@ -4,7 +4,7 @@ Used when you install Git or set your identity.
 git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 git config --list
-git help <command>
+git help <cmd>
 
 🔹 2. Repository Creation
 Start or copy a repository.
