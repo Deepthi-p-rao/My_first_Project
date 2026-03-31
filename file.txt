@@ -55,10 +55,10 @@ Undo pushed commit	git revert <hash>	         Safe undo by new commit
 🔹 7. Stashing
 Temporarily save work.
 
-git stash
-git stash list
-git stash apply
-git stash pop
+git stash-Saves all uncommitted changes (working directory + staging area)
+git stash list-View stashed changes
+git stash apply-Bring back your changes to working directory
+git stash pop-apply + delete from stash
 git stash drop
 
 🔹 8. Rewriting History (Advanced ⚠️)
